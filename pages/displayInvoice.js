@@ -2,7 +2,6 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import ClientBlock from 'clientBlock'
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";

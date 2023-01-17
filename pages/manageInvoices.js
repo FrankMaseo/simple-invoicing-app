@@ -2,7 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Modal from './invoiceModal';
+import Modal from './invoiceModal'
+import invoiceTest from './test-data/invoiceTest';
 
 /*
 // Import the functions you need from the SDKs you need
@@ -33,54 +34,8 @@ const analytics = getAnalytics(app);
 
 */
 
-const d1 = new Date("2022-12-01")
-const invoicesTest = [
-    {
-        invoiceId: "A1",
-        invoiceDate: "2022-12-01",
-        clientFirstName: "Florent",
-        clientLastName: "Dubois",
-        clientEmail: "florentdubois@live.fr",
-        details: [
-            {
-                "key": 0,
-                "description": "Consultation de Naturopathie",
-                "price": 55,
-                "quantity": 2
-            },
-            {
-                "key": 2,
-                "description": "Reflexologie plantaire",
-                "price": 75,
-                "quantity": 1
-            }
-        ]
-    },
-    {
-        invoiceId: "A2",
-        invoiceDate: "2022-12-10",
-        clientFirstName: "Leo",
-        clientLastName: "Dubois",
-        clientEmail: "leodubois@live.fr",
-        details: [
-            {
-                "key": 0,
-                "description": "Consultation de Naturopathie",
-                "price": 55,
-                "quantity": 1
-            },
-            {
-                "key": 2,
-                "description": "Iridologie",
-                "price": 35,
-                "quantity": 3
-            }
-        ]
-    },
-
-]
-
-
+const d1 = new Date("2022-12-01");
+const invoicesTest = invoiceTest();
 
 export default function ManageInvoices() {
 

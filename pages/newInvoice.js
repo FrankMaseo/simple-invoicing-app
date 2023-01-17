@@ -197,6 +197,8 @@ export default function NewInvoice() {
     )
 }
 
+
+/*
 function detailsReducer(state, action) {
 
     // get the movie object and the type of action by destructuring
@@ -224,3 +226,5 @@ function detailsReducer(state, action) {
     }
     return state
 }
+
+*/

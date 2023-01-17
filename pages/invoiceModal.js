@@ -1,6 +1,7 @@
 //Modal.js
 import styles from '../styles/Modal.module.css'
-import React from 'react';
+import React from 'react'
+import companyDetails from './test-data/companyDetails'
 
 const Modal = props => {
     const divStyle = {
@@ -45,24 +46,7 @@ function ClientBlock(props) {
 }
 
 
-const companyDetails = {
-    entrepreneurName: "Dominique Dubois",
-    companyName: "",
-    companyAddress: {
-        streetLine1: "46 rue des rivoirelles",
-        streetLine2: "",
-        zipCode: "69440",
-        city: "Taluyers"
-    },
-    companyContact: {
-        phoneNo1: "0674108991",
-        email: "dominiqueduboisnaturopathe@gmail.com"
-    },
-    companyLegalCode: {
-        type: "SIRET",
-        code: "123456789"
-    }
-};
+const companyDetails = companyDetails();
 
 function CompanyBlock() {
 

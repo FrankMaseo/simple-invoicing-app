@@ -10,7 +10,7 @@ export default function submitInvoice(
 
     let invoiceDB = Index();
     //Check last invoice ID
-    console.log(invoiceDB.invoices.invoices);
+    console.log(invoiceDB.invoices);
     //Construct json object to add
     let newInvoice = invoiceBuilder(
         clientFirstName,
