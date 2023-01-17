@@ -1,0 +1,432 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 3.6rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 100%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.cardSoon {
+    margin: 1rem;
+    flex-basis: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    color: gray;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+}
+
+.inputGrid {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    gap: 10px 20px;
+    min-width: 600px;
+    margin-top: 2rem;
+}
+
+    .inputGrid h2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .inputGrid h3 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+
+.inputClient {
+    grid-row-start: 2;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+
+
+.inputDetails {
+    grid-row-start: 4;
+    display: inline-grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto; 
+}
+
+.detailsForm {
+    grid-row-start: 1;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    grid-column: 1;
+}
+
+.detailsForm label{
+    grid-row-start: 1;
+}
+
+.detailsForm input {
+    grid-row-start: 2;
+
+}
+
+.detailsForm submit {
+    margin: auto; 
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.detailsDisplay {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    font-style: body;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    grid-column: 1;
+}
+
+.detailsDisplay table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.detailsDisplay thead tr {
+    background-color: #0098aa;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+    .detailsDisplay th,
+    .detailsDisplay td {
+        padding: 12px 15px;
+    }
+
+    .detailsDisplay tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .detailsDisplay tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    .detailsDisplay tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+.detailsHeader {
+    grid-row-start: 1;
+}
+
+.invoiceDateRange {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 100%;
+}
+
+
+.clientForm {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    display: inline-grid;
+    grid-template-columns: auto;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    grid-column: 1;
+}
+
+.clientForm label {
+    margin-right: 10px; 
+    margin-top: 5px;
+}
+
+.clientForm input {
+    margin-top: 2px;
+}
+
+.clientForm button {
+    margin-top: 10px;
+}
+.input ::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.clientDisplay {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    grid-column: 2;
+}
+
+
+.myFooter {
+    margin-top: 10px;
+    width: 60%;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 50% 50%;
+}
+
+    .myFooter button {
+        border: none;
+        color: white;
+        background-color: #0098aa;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 12px;
+        transition-duration: .4s;
+        cursor: pointer;
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    .myFooter button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s;
+    }
+
+    .submitInvoice button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.4s;
+    }
+
+.backToHome button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.4s;
+}
+
+
+    .submitInvoice button:hover span {
+        padding-right: 25px;
+    }
+
+    .backToHome button:hover span {
+        padding-left: 25px;
+    }
+
+    .backToHome button:hover span:after {
+        opacity: 1;
+        left: 0;
+    }
+
+    .submitInvoice button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+
+
+
+
+.invoiceDateRange div {
+    width: 100%;
+    display: inline-grid;
+    grid-auto-columns: 45% 10% 45%;
+    grid-auto-rows: auto;
+}
+
+.invoiceDateRange label {
+    justify-content: center;
+    text-align: inherit;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.invoiceDateRange span {
+    text-align: inherit;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.invoiceDateRange input {
+    text-align: inherit;
+    grid-row-start: 1;
+}
+
+.invoiceMgmtDisplay table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.invoiceMgmtDisplay thead tr {
+    background-color: #0098aa;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+.invoiceMgmtDisplay th,
+.invoiceMgmtDisplay td {
+    padding: 12px 15px;
+}
+
+.invoiceMgmtDisplay tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.invoiceMgmtDisplay tbody tr:hover {
+    background-color: #00bbbb;
+}
+
+.invoiceMgmtDisplay tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+    .invoiceMgmtDisplay tbody tr:nth-of-type(even):hover {
+        background-color: #00bbbb;
+    }
+
+    .invoiceMgmtDisplay tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+.invoiceMgmtSumUp {
+    margin-top: 20px;
+    display: grid;
+    grid-auto-columns: 50% 50%;
+}
+
+.invoiceMgmtSumUp span {
+    grid-row-start: 1;
+    text-align: center
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}

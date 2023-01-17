@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "FileReader": "^0.10.2",
+    "firebase": "^9.15.0",
+    "fs": "^0.0.1-security",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-modal": "^3.16.1",
+    "reactjs-popup": "^2.0.5",
+    "swr": "^2.0.0"
+  }
+}
